@@ -5,49 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Raicu Costel-Ciprian</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <div>
             <a href="index.html">
-                <div class="logo-avatar">RC</div>
-                <div class="logo-text">
-                    <strong>Raicu Costel-Ciprian</strong>
+                <span>RC</span>
+                <span>
+                    Costel-Ciprian Raicu
                     <small>Research &amp; academic profile</small>
-                </div>
+                </span>
             </a>
             <nav aria-label="Main navigation">
                 <a href="index.html">Overview</a>
                 <a href="research.html">Research</a>
                 <a href="publications.html">Publications</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="about.html">About</a>
                 <a aria-current="page" href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="section">
-        <p class="section-tag">Get in touch</p>
-        <h1 class="section-title">Contact Information</h1>
-        <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Institutional affiliation and professional academic profiles.</p>
+    <main>
+        <div style="margin-bottom: 2.5rem;">
+            <p style="text-transform: uppercase; font-size: 0.72rem; letter-spacing: 1.5px; font-weight: 700; color: #0284c7; margin-bottom: 0.5rem;">Get in touch</p>
+            <h1>Contact information</h1>
+            <p style="color: #64748b; margin-top: 0.5rem;">Institutional affiliation and professional profiles.</p>
+        </div>
 
-        <div class="grid-3">
-            <article class="card">
-                <span>INSTITUTION</span>
-                <h3>Faculty of Electrical Engineering</h3>
-                <p>National University of Science and Technology POLITEHNICA Bucharest<br>Bucharest, Romania</p>
-            </article>
-            <article class="card">
-                <span>PROFILES</span>
-                <h3>Academic Networks</h3>
-                <p>
-                    <a href="https://orcid.org/0000-0001-8845-6093" target="_blank">ORCID Profile ↗</a><br>
-                    <a href="https://www.linkedin.com/in/ciprian-raicu-805347b4" target="_blank">LinkedIn Profile ↗</a>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+            <div style="border: 1px solid #e2e8f0; padding: 2rem; border-radius: 4px; background: #fff;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: #8b263e; display: block; margin-bottom: 0.75rem;">INSTITUTION</span>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem; color: #0f172a;">Faculty of Electrical Engineering</h3>
+                <p style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">
+                    National University of Science and Technology POLITEHNICA Bucharest<br>
+                    Department of Measurements, Electrical Apparatus and Static Control (DMAECS)<br>
+                    Bucharest, Romania
                 </p>
-            </article>
+            </div>
+
+            <div style="border: 1px solid #e2e8f0; padding: 2rem; border-radius: 4px; background: #fff;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: #8b263e; display: block; margin-bottom: 0.75rem;">PROFILES</span>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem; color: #0f172a;">Academic Networks</h3>
+                <p style="color: #64748b; font-size: 0.95rem; line-height: 1.8;">
+                    <a href="https://orcid.org/0000-0001-8845-6093" target="_blank" style="color: #0284c7; text-decoration: none;">ORCID: 0000-0001-8845-6093 ↗</a><br>
+                    <a href="https://www.linkedin.com/in/ciprian-raicu-805347b4" target="_blank" style="color: #0284c7; text-decoration: none;">LinkedIn Profile ↗</a>
+                </p>
+            </div>
         </div>
     </main>
 
@@ -57,9 +63,10 @@
                 <strong>Raicu Costel-Ciprian</strong><br>
                 Electrical engineering · POLITEHNICA Bucharest
             </div>
-            <nav>
+            <nav aria-label="Academic profiles">
                 <a href="https://orcid.org/0000-0001-8845-6093" target="_blank">ORCID ↗</a>
                 <a href="https://www.linkedin.com/in/ciprian-raicu-805347b4" target="_blank">LinkedIn ↗</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </footer>
