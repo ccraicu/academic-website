@@ -1,8 +1,8 @@
 :root {
     --primary: #0f172a;
     --primary-hover: #1e293b;
-    --accent: #0284c7;
-    --accent-hover: #0369a1;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
     --text-main: #334155;
     --text-muted: #64748b;
     --bg-light: #f8fafc;
@@ -37,11 +37,11 @@ body {
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
 }
 
 .header-container {
-    max-width: 1140px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -57,8 +57,8 @@ body {
 }
 
 .logo-avatar {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     background-color: var(--primary);
     color: #fff;
     border-radius: 50%;
@@ -75,7 +75,7 @@ body {
 }
 
 .logo-text strong {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.2;
 }
 
@@ -106,43 +106,43 @@ body {
 }
 
 .hero-container {
-    max-width: 1140px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.8fr 1fr;
+    grid-template-columns: 1.6fr 1fr;
     gap: 3rem;
     align-items: center;
 }
 
 .hero-tag {
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--text-muted);
     margin-bottom: 0.75rem;
 }
 
 .hero-title {
-    font-size: 2.75rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--primary);
-    line-height: 1.15;
-    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
 }
 
 .hero-description {
     font-size: 1.05rem;
     color: var(--text-main);
     margin-bottom: 1.75rem;
-    max-width: 650px;
+    max-width: 600px;
 }
 
 .hero-actions {
@@ -153,7 +153,7 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 0.7rem 1.4rem;
+    padding: 0.65rem 1.3rem;
     border-radius: var(--radius-sm);
     font-weight: 600;
     font-size: 0.95rem;
@@ -183,55 +183,71 @@ body {
 
 .external-links {
     display: flex;
-    gap: 1.25rem;
+    gap: 1.5rem;
 }
 
 .external-links a {
-    color: var(--accent);
+    color: var(--primary);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
 .external-links a:hover {
+    color: var(--accent);
     text-decoration: underline;
 }
 
+/* Profile Photo Container */
 .hero-profile-card {
     background: var(--bg-light);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.profile-avatar-placeholder {
-    width: 120px;
-    height: 120px;
+.profile-avatar-container {
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     background-color: var(--primary);
-    color: #fff;
+}
+
+.profile-avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-avatar-fallback {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1.25rem;
 }
 
 .profile-meta strong {
     display: block;
     color: var(--primary);
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
 }
 
 .profile-meta span {
     color: var(--text-muted);
-    font-size: 0.875rem;
+    font-size: 0.85rem;
 }
 
 .section-padding {
@@ -243,7 +259,7 @@ body {
 }
 
 .section-container {
-    max-width: 1140px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -257,7 +273,7 @@ body {
     letter-spacing: 1px;
     font-weight: 600;
     color: var(--text-muted);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
 }
 
 .section-header h2 {
@@ -267,7 +283,7 @@ body {
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
 }
 
@@ -280,8 +296,8 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.04);
 }
 
 .card-num {
@@ -293,13 +309,13 @@ body {
 }
 
 .card h3 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: var(--primary);
     margin-bottom: 0.75rem;
 }
 
 .card p {
-    font-size: 0.925rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
 }
 
@@ -318,6 +334,7 @@ body {
 
 .teaching-box li {
     margin-bottom: 0.5rem;
+    font-size: 0.95rem;
 }
 
 .contact-grid {
@@ -353,12 +370,12 @@ body {
     border-top: 1px solid var(--border-color);
     padding: 2.5rem 1.5rem;
     background-color: var(--bg-white);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
 }
 
 .footer-container {
-    max-width: 1140px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -380,7 +397,7 @@ body {
         gap: 1rem;
     }
     .hero-title {
-        font-size: 2.1rem;
+        font-size: 2.2rem;
     }
     .footer-container {
         flex-direction: column;
