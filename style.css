@@ -1,14 +1,7 @@
 :root {
-  --ink:#142c3d; 
-  --text:#536a7b; 
-  --muted:#536774; 
-  --accent:#a83243;
-  --accent-dark:#862838; 
-  --paper:#fff; 
-  --soft:#f5f8fa; 
-  --line:#d5e0e6;
-  --max:1574px; 
-  --radius:0px;
+  --ink:#172f40; --text:#536a7b; --muted:#718392; --accent:#a83243;
+  --accent-dark:#862838; --paper:#fff; --soft:#f5f8fa; --line:#d5e0e6;
+  --max:1574px; --radius:0px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:100px}
