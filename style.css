@@ -1,18 +1,23 @@
 :root {
-  --ink: #172033;
-  --text: #334155;
-  --muted: #64748b;
-  --accent: #1675a9;
-  --accent-dark: #105b85;
-  --paper: #ffffff;
-  --soft: #f5f8fb;
-  --line: #dce5ec;
-  --max: 1120px;
-  --radius: 10px;
+  --ink: #142c3d;
+  --muted: #536774;
+  --paper: #fff;
+  --subtle: #f2f5f6;
+  --line: #dce3e6;
+  --accent: #9e3444;
+  --teal: #176b70;
+  --dark: #142f40;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-body { margin: 0; font: 16px/1.7 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text); background: var(--paper); }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body {
+  margin: 0;
+  font: 16px/1.7 var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+}
 a { color: var(--accent); text-decoration: none; }
 a:hover { color: var(--accent-dark); text-decoration: underline; }
 img { max-width: 100%; }
